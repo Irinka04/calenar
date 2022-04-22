@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calendar App Vanilla JS</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="aa">
+    <a href="https://github.com/portexe/VanillaCalendar" target="_blank" rel="noopener noreferrer">Код гидхаб</a> <br>
+    <a href="https://www.youtube.com/watch?v=m9OSBJaQTlM&ab_channel=PortEXE" target="_blank"
+      rel="noopener noreferrer">Программирование приложения календаря на простом JavaScript</a>
+  </div>
+  <div id="container">
+    <div id="header">
+      <div id="monthDisplay"></div>
+      <div>
+        <button id="backButton">Назад</button>
+        <button id="nextButton">Вперед</button>
+      </div>
+    </div>
+
+    <div id="weekdays">
+      <div>Воскресенье</div>
+
+      <div>Понедельник</div>
+      <div>Вторник</div>
+      <div>Среда</div>
+      <div>Четверг</div>
+      <div>Пятница</div>
+      <div>Суббота</div>
+
+    </div>
+
+    <div id="calendar"></div>
+  </div>
+
+  <div id="newEventModal">
+    <h2>New Event</h2>
+
+    <input id="eventTitleInput" placeholder="Event Title" />
+
+    <button id="saveButton">Сохранить</button>
+    <button id="cancelButton">Отмена</button>
+  </div>
+
+  <div id="deleteEventModal">
+    <h2>Event</h2>
+
+    <p id="eventText"></p>
+
+    <button id="deleteButton">Удалить</button>
+    <button id="closeButton">Отмена</button>
+  </div>
+
+  <div id="modalBackDrop"></div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
